@@ -1,16 +1,15 @@
-//import logo from './assets/images/logo.png';
+//style
 import "./css/style.css";
+//components
 import Header from "./components/organisms/Header";
-import information from "./information.json"
+import SearchForm from "./components/molecules/SearchForm";
 
 function App() {
-  console.log(information)
-  console.log("App component")
   
   return (
     <div className="App">
-      <h1></h1>
-      <Header data={information[0]} />
+      <Header />
+      <SearchForm />
     </div>
   );
 }

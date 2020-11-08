@@ -1,0 +1,35 @@
+
+.search-form input {
+    box-sizing: border-box;
+    display: inline-block;
+    width: calc(100% - 64px - 10px); /* 48px is the width of the search button */
+    height: 36px;
+    padding: 20px;
+    font-size: 14px;
+    border: solid 0.5px #f5d95b;
+    outline: none;
+  }
+  
+  .search-form a {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 64px;
+    height: 36px;
+    background-color: #f8f8f8;
+    color: #d62828;
+    border: solid 0.5px #cc2727;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    line-height: 36px;
+    margin-top:30px;
+     
+  }
+.search-form {
+    background-color: whitesmoke;
+    background: url("../../assets/images/home-image3.jpg") center;
+    background-size: cover;
+    height: 580px;
+    margin-left: 30px;
+}
+
