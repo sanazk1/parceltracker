@@ -5,7 +5,7 @@ import React from "react";
 import SearchForm from "../molecules/SearchForm";
 import Header from "../organisms/Header";
 
-export default function HomePage({ information }) {
+export default function HomePage() {
   // Sub components
 
   return (
