@@ -1,11 +1,14 @@
+
 .search-page {
     height: 100%; /* 100vh forces to cover the screen. 100% only cover the screen if there is a lot of content. */
+
   }
-  
+ 
   .search-page .container {
     margin: 0 auto;
     padding-top: 32px;
     max-width: 320px;
+  
   }
   
   .search-page .container > .title {
@@ -14,8 +17,8 @@
     font-size: 20px;
     letter-spacing: -0.75px;
   }
-  
-  /* YouTube breakpoints */
+ 
+  /* Breakpoints */
   @media only screen and (min-width: 500px) {
     .search-page .container {
       max-width: 100%;

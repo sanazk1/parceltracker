@@ -13,9 +13,7 @@ export default function SearchForm(parameter) {
             <input placeholder= "Enter your Parcel ID" />
             </article>
         
-            <Link to={`result/${parameter}`}>
-            <a className="button" >Track</a>
-            </Link>
+            <Link className="button" to={`result/${parameter}`}>Track</Link>
             
         </div>
     )

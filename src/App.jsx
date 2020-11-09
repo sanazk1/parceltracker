@@ -11,27 +11,33 @@ import Card from "./components/molecules/Card";
 
 export default function App() {
 
+  //0= loading, 1= ready, 2= error
+  const [status, setStatus] = useState(0);
   const [information, setInformation] = useState([]);
-  const endPoint = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
+  const endpoint= "https://my.api.mockaroo.com/orders.json?key=e49e6840";
 
-  useEffect(() => {  
+  useEffect( () => {
+    const getData = async () => {
+      try {
+        const response= await fetch(endpoint, { mode: "cors"});
+        const data= await response.json();
+        console.log(data);
+        setInformation(data);
+        setStatus(1);
+      }
+      catch {
+        setStatus(2);
+      }
+    };
     getData();
   }, []);
-
-  const getData = async () => {  
-  try{
-    const response = await fetch(endPoint,{mode:"cors"});  
-      const data = await response.json();     
-      setInformation(data); 
-      console.log(information);
-  }catch{
-    console.log("Error while fetching API");
-  }
-};
 //const list = data;
   return (
       <Router>
         <div className="App">
+        {status === 0 ? <p>Loading..</p> : null}
+        {status === 2 ? <p>Error, Cant fetch data!</p> : null}
+        {status === 1 ?
           <Switch>
           <Route path="/" exact render = {()=> <HomePage/>} />
           <Route path="/result/:parameter"
@@ -40,6 +46,7 @@ export default function App() {
             )}
           />
           </Switch>
+           : null}
         </div>
       </Router>
   );
