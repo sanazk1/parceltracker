@@ -17,13 +17,14 @@ Class naming:
 /*@import url("./modules/meta-data.css");*/
 /*@import url("./modules/search-bar.css");*/
 @import url("./modules/search-form.css");
+@import url("./modules/card.css");
 
 /* Organisms */
 @import url("./modules/header.css");
 
 
-/* Templates 
+/* Templates*/
 @import url("./templates/home-page.css");
-@import url("./templates/results-page.css");
-@import url("./templates/video-page.css");
+/*@import url("./templates/search-page.css");*/
+/*@import url("./templates/video-page.css");
 */

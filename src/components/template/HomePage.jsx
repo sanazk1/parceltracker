@@ -9,7 +9,7 @@ import Header from "../organisms/Header";
 
 export default function HomePage({information}) {
   
-
+  
   return (
     <div className="home-page">
       <Header />

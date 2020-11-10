@@ -1,7 +1,7 @@
 // React core
 import React from "react";
 //import { Link } from "react-router-dom";
-import SearchResultsPage from "../template/SearchResultsPage";
+//import SearchResultsPage from "../template/SearchResultsPage";
 export default function Card({ data }) {
     console.log(data);
 
