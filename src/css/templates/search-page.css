@@ -1,7 +1,7 @@
 
 .search-page {
     height: 100%; /* 100vh forces to cover the screen. 100% only cover the screen if there is a lot of content. */
-
+    
   }
  
   .search-page .container {
@@ -17,7 +17,7 @@
     font-size: 20px;
     letter-spacing: -0.75px;
   }
- 
+  
   /* Breakpoints */
   @media only screen and (min-width: 500px) {
     .search-page .container {

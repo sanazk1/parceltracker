@@ -8,11 +8,12 @@ export default function SearchForm(parameter) {
 
     return (
         <div className= {"search-form"}>
-            <article className= "input-details">
+            {/*<article className= "input-details">
             <h3>Parcel ID</h3>
-            <input placeholder= "Enter your Parcel ID" />
+            <input placeholder= "'Enter Parcel ID" />
             </article>
-        
+   
+            <h4>Track your packages</h4> */}
             <Link className="button" to={`result/${parameter}`}>Track</Link>
             
         </div>

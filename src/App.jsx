@@ -11,7 +11,7 @@ import Card from "./components/molecules/Card";
 
 export default function App() {
 
-  
+   //0= loading, 1= ready, 2= error
   const [status, setStatus] = useState(0);
   const [information, setInformation] = useState([]);
   const endpoint= "https://my.api.mockaroo.com/orders.json?key=e49e6840";
@@ -23,11 +23,12 @@ export default function App() {
         const data= await response.json();
         console.log(data);
         setInformation(data);
-        console.log("informatiolkkhnn");
+        setStatus(1);
+
         console.log(information);
-        console.log("information");
       }
       catch {
+        setStatus(2);
         console.log("Error while fetching API");
       }
     };
@@ -38,6 +39,9 @@ export default function App() {
    
       <Router>
         <div className="App">
+        {status === 0 ? <p>Loading..</p> : null}
+        {status === 2 ? <p>Error, Cant fetch data!</p> : null}
+        {status === 1 ? 
        
           <Switch>
           <Route path="/" exact render = {()=> <HomePage/>} />
@@ -47,7 +51,7 @@ export default function App() {
             )}
           />
           </Switch>
-          
+          : null}
         </div>
       </Router>
   );

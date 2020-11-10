@@ -14,9 +14,9 @@ export default function Header() {
         <a >
         <Link to="/">
             <img src={logo} alt= "Logo of the yellow company" />
-        </Link>
+            </Link>
         </a>
-       
+        
     </header>
     );
 }
