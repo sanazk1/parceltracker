@@ -6,7 +6,7 @@ import "./css/style.css";
 //components
 import HomePage from "./components/template/HomePage";
 import SearchResultsPage from "./components/template/SearchResultsPage";
-import Card from "./components/molecules/Card";
+
 
 
 export default function App() {
