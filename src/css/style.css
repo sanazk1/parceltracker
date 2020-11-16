@@ -21,10 +21,10 @@ Class naming:
 
 /* Organisms */
 @import url("./modules/header.css");
-
+@import url("./modules/footer.css");
 
 /* Templates*/
 @import url("./templates/home-page.css");
-/*@import url("./templates/search-page.css");*/
+@import url("./templates/search-page.css");
 /*@import url("./templates/video-page.css");
 */

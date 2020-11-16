@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 // Components
 import Header from "../organisms/Header";
+import Footer from "../organisms/Footer";
 import Card from "../molecules/Card";
 
 
@@ -28,7 +29,9 @@ const Cards= results.map((item) => {
 return (
     <div className= "search-page">
         <Header />
-
+        <Link className= "button" to="/">
+            Back to Home
+          </Link>
         <section className= "container">
             {/*<h3>Following are your parcels: </h3>*/}
             <div className= "grid">{Cards}</div>
@@ -36,6 +39,8 @@ return (
         <Link className= "button" to="/">
             Back to Home
           </Link>
+        <Footer />
+        
         
     </div>
     );

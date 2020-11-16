@@ -12,8 +12,10 @@ export default function SearchForm(parameter) {
             <h3>Parcel ID</h3>
             <input placeholder= "'Enter Parcel ID" />
             </article>
-   
-            <h4>Track your packages</h4> */}
+             */}
+            
+            <h3>Click here to
+                track your parcels:</h3>
             <Link className="button" to={`result/${parameter}`}>Track</Link>
             
         </div>

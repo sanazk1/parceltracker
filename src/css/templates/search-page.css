@@ -1,43 +1,39 @@
-
 .search-page {
-    height: 100%; /* 100vh forces to cover the screen. 100% only cover the screen if there is a lot of content. */
-    
-  }
- 
+  height: 100%; /* 100vh forces to cover the screen. 100% only cover the screen if there is a lot of content. */
+}
+.search-page .container {
+  margin: 0 auto;
+  padding-top: 32px;
+  max-width: 320px;
+}
+
+.search-page .container > .title {
+  padding-left: 8px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  letter-spacing: -0.75px;
+}
+
+
+/* breakpoints */
+@media only screen and (min-width: 500px) {
   .search-page .container {
-    margin: 0 auto;
-    padding-top: 32px;
-    max-width: 320px;
-  
+    max-width: 100%;
+    margin-left: 16px;
   }
-  
-  .search-page .container > .title {
-    padding-left: 8px;
-    margin-bottom: 16px;
-    font-size: 20px;
-    letter-spacing: -0.75px;
+
+  .search-page .card {
+    display: flex;
+    flex-direction: row;
   }
-  
-  /* Breakpoints */
-  @media only screen and (min-width: 500px) {
-    .search-page .container {
-      max-width: 100%;
-      margin-left: 16px;
-    }
-  
-    .search-page .card {
-      display: flex;
-      flex-direction: row;
-    }
-  
-    .search-page .card .preview {
-      width: auto;
-      height: 160px;
-      margin-right: 8px;
-    }
-  
-    .search-page .card .channel-thumb {
-      display: none;
-    }
+
+  .search-page .card .preview {
+    width: auto;
+    height: 160px;
+    margin-right: 8px;
   }
-  
+
+  .search-page .card .channel-thumb {
+    display: none;
+  }
+}

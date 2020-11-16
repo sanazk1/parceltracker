@@ -6,7 +6,9 @@
     font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
-    
+    display:block;        
+    margin:10px auto;
+    width: 100px;
   }
   
   /*
